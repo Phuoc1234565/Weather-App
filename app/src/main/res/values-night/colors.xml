@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="page_bg_light">#0B131E</color>
+    <color name="text_dark">#F1F5F9</color>
+    <color name="text_title">#F1F5F9</color>
+    <color name="text_body">#D5DFEA</color>
+    <color name="text_sub">#A6B6C8</color>
+    <color name="text_muted">#8396AC</color>
+    <color name="input_bg">#162233</color>
+    <color name="input_border">#2B3C52</color>
+    <color name="card_border">#20324B</color>
+    <color name="divider_color">#20324B</color>
+    <color name="chip_bg_unselected">#1A2A3F</color>
+    <color name="border_color">#2B3C52</color>
+    <color name="edit_text_bg">#162233</color>
+</resources>

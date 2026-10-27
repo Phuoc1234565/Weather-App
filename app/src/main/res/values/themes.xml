@@ -1,0 +1,64 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Base.Theme.WeatherApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_blue</item>
+        <item name="colorPrimaryDark">@color/primary_dark_blue</item>
+        <item name="colorAccent">@color/accent_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">#1687F4</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorTertiary">#FFB52E</item>
+        <item name="colorOnTertiary">#173F73</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/text_dark</item>
+        <item name="colorSurfaceVariant">@color/page_bg_light</item>
+        <item name="colorOnSurfaceVariant">@color/text_sub</item>
+        <item name="colorOutline">@color/border_color</item>
+        <item name="colorControlActivated">@color/primary_blue</item>
+        <item name="android:colorAccent">@color/primary_blue</item>
+        <item name="android:statusBarColor">@color/page_bg_light</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:navigationBarColor">#FF000000</item>
+        <item name="android:windowBackground">@color/page_bg_light</item>
+    </style>
+
+    <style name="Theme.WeatherApp" parent="Base.Theme.WeatherApp" />
+
+    <!-- Splash theme with no action bar -->
+    <style name="Theme.WeatherApp.Splash" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/primary_blue</item>
+        <item name="colorPrimary">@color/primary_blue</item>
+        <item name="colorSecondary">#1687F4</item>
+        <item name="colorTertiary">#FFB52E</item>
+        <item name="android:statusBarColor">@color/primary_blue</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+    </style>
+
+    <!-- Auth theme (Login/Register) -->
+    <style name="Theme.WeatherApp.Auth" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_blue</item>
+        <item name="colorSecondary">#1687F4</item>
+        <item name="colorControlActivated">@color/primary_blue</item>
+        <item name="android:colorAccent">@color/primary_blue</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    </style>
+
+    <!-- EditText style -->
+    <style name="Widget.WeatherApp.EditText" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/border_color</item>
+        <item name="boxBackgroundColor">@color/edit_text_bg</item>
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+    </style>
+
+    <!-- Button style -->
+    <style name="Widget.WeatherApp.Button" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/primary_blue</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">12dp</item>
+    </style>
+</resources>

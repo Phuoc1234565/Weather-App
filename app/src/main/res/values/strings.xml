@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <!-- Splash -->
+    <string name="app_slogan">Dự báo thời tiết chính xác - Mọi lúc, mọi nơi</string>
+    <string name="btn_start">Bắt đầu</string>
+    <!-- Register -->
+    <string name="title_register">Đăng ký tài khoản</string>
+    <string name="subtitle_register">Tạo tài khoản để sử dụng đầy đủ tính năng</string>
+    <string name="hint_fullname">Họ và tên</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_email_phone">Nhập email hoặc số điện thoại</string>
+    <string name="hint_password">Mật khẩu</string>
+    <string name="hint_confirm_password">Xác nhận mật khẩu</string>
+    <string name="hint_input_password">Nhập mật khẩu</string>
+    <string name="hint_input_confirm_password">Nhập lại mật khẩu</string>
+    <string name="btn_register">Đăng ký</string>
+    <string name="already_have_account">Đã có tài khoản? Đăng nhập</string>
+    <!-- Login -->
+    <string name="title_login">Đăng nhập</string>
+    <string name="subtitle_login">Chào mừng bạn trở lại!</string>
+    <string name="btn_login">Đăng nhập</string>
+    <string name="remember_me">Nhớ mật khẩu</string>
+    <string name="forgot_password">Quên mật khẩu?</string>
+    <string name="no_account">Chưa có tài khoản? Đăng ký</string>
+    <!-- Main -->
+    <string name="feels_like">Cảm giác như %1$s°</string>
+    <string name="humidity_label">Độ ẩm</string>
+    <string name="wind_label">Gió</string>
+    <string name="uv_label">UV</string>
+    <string name="forecast_today">Dự báo hôm nay</string>
+    <string name="forecast_7days">Dự báo 7 ngày</string>
+    <string name="see_detail">Xem chi tiết</string>
+    <!-- Bottom Nav -->
+    <string name="nav_home">Trang chủ</string>
+    <string name="nav_forecast">Dự báo</string>
+    <string name="nav_map">Bản đồ</string>
+    <string name="nav_locations">Địa điểm</string>
+    <string name="nav_settings">Cài đặt</string>
+    <!-- Search -->
+    <string name="title_search">Tìm kiếm địa điểm</string>
+    <string name="hint_search">Nhập tên thành phố, tỉnh thành...</string>
+    <string name="popular_places">Địa điểm phổ biến</string>
+    <string name="search_history">Lịch sử tìm kiếm</string>
+    <!-- Favorite Locations -->
+    <string name="title_favorites">Địa điểm yêu thích</string>
+    <string name="btn_add_location">+ Thêm địa điểm</string>
+    <!-- Add Location -->
+    <string name="title_add_location">Thêm địa điểm</string>
+    <string name="suggested_locations">Địa điểm gợi ý</string>
+    <!-- Settings -->
+    <string name="title_settings">Cài đặt</string>
+    <string name="setting_unit">Đơn vị nhiệt độ</string>
+    <string name="setting_notification">Thông báo thời tiết</string>
+    <string name="setting_dark_mode">Chế độ tối</string>
+    <string name="setting_language">Ngôn ngữ</string>
+    <string name="setting_location">Vị trí hiện tại</string>
+    <string name="setting_optimize">Giới thiệu ứng dụng</string>
+    <string name="setting_rate">Đánh giá ứng dụng</string>
+    <string name="setting_logout">Đăng xuất</string>
+    <!-- Notifications -->
+    <string name="title_notifications">Thông báo</string>
+    <string name="notif_rain">Cảnh báo mưa</string>
+    <string name="notif_rain_desc">Thông báo khi có mưa trong khu vực của bạn</string>
+    <string name="notif_hot">Cảnh báo nắng nóng</string>
+    <string name="notif_hot_desc">Thông báo khi nhiệt độ đạt quá cao</string>
+    <string name="notif_storm">Cảnh báo thời tiết xấu</string>
+    <string name="notif_storm_desc">Thông báo bão, áp thấp, gió mạnh...</string>
+    <string name="notif_daily">Nhắc nhở hàng ngày</string>
+    <string name="notif_daily_desc">Gửi dự báo thời tiết mỗi buổi sáng</string>
+    <!-- Weather -->
+    <string name="weather_sunny">Trời nắng</string>
+    <string name="weather_cloudy">Có mây</string>
+    <string name="weather_rain">Có mưa</string>
+    <string name="weather_storm">Bão</string>
+    <string name="high_label">Cao nhất</string>
+    <string name="low_label">Thấp nhất</string>
+    <string name="today">Hôm nay</string>
+    <string name="detail_weather">Chi tiết thời tiết</string>
+    <string name="map_weather">Bản đồ thời tiết</string>
+    <string name="forecast_legend_rain">Mưa nhẹ</string>
+    <string name="forecast_legend_medium_rain">Mưa vừa</string>
+    <string name="forecast_legend_heavy_rain">Mưa to</string>
+    <string name="nice_weather_tip">Thời tiết đẹp\ncho những kế hoạch tuyệt vời!</string>
+    <string name="error_email_empty">Vui lòng nhập email</string>
+    <string name="error_password_empty">Vui lòng nhập mật khẩu</string>
+    <string name="error_name_empty">Vui lòng nhập họ và tên</string>
+    <string name="error_password_mismatch">Mật khẩu không khớp</string>
+    <string name="error_login_failed">Đăng nhập thất bại</string>
+    <string name="error_register_failed">Đăng ký thất bại</string>
+    <string name="unit_celsius">°C</string>
+    <string name="language_vi">Tiếng Việt</string>
+    <string name="loading">Đang tải...</string>
+    <string name="km_h">km/h</string>
+    <string name="percent">%</string>
+    <string name="uv_low">Thấp</string>
+    <string name="uv_medium">Trung bình</string>
+    <string name="uv_high">Cao</string>
+</resources>

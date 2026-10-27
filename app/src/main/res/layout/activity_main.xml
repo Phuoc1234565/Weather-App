@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F7FC">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="76dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <ImageView android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/ic_location_pin" android:contentDescription="Vị trí" />
+                <TextView android:id="@+id/tvCityName" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="6dp" android:layout_weight="1" android:text="Hồ Chí Minh" android:textColor="#163B68" android:textSize="16sp" android:textStyle="bold" />
+                <ImageButton android:id="@+id/btnSearch" android:layout_width="38dp" android:layout_height="38dp" android:layout_marginEnd="6dp" android:background="@drawable/bg_circle_white" android:padding="10dp" android:src="@drawable/ic_search" android:contentDescription="Tìm kiếm địa điểm" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:background="@drawable/bg_tag_light"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="3dp">
+                    <TextView android:id="@+id/btnCelsius" android:layout_width="36dp" android:layout_height="28dp" android:background="@drawable/bg_button_blue" android:gravity="center" android:text="°C" android:textColor="#FFFFFF" android:textSize="12sp" android:textStyle="bold" />
+                    <TextView android:id="@+id/btnFahrenheit" android:layout_width="36dp" android:layout_height="28dp" android:layout_marginStart="3dp" android:gravity="center" android:text="°F" android:textColor="#52677E" android:textSize="12sp" android:textStyle="bold" />
+                </LinearLayout>
+                <ImageButton android:id="@+id/btnNotifications" android:layout_width="38dp" android:layout_height="38dp" android:layout_marginStart="7dp" android:background="@drawable/bg_circle_white" android:padding="10dp" android:src="@drawable/ic_notifications" android:contentDescription="Thông báo" />
+                <ImageButton android:id="@+id/btnSettings" android:layout_width="38dp" android:layout_height="38dp" android:layout_marginStart="7dp" android:background="@drawable/bg_circle_white" android:padding="10dp" android:src="@drawable/ic_settings" android:contentDescription="Cài đặt" />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:elevation="5dp"
+                app:cardBackgroundColor="#1682DE"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="5dp">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:background="@drawable/bg_hero_weather">
+                    <ImageView
+                        android:layout_width="188dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="bottom|end"
+                        android:alpha="0.98"
+                        android:src="@drawable/ic_city_skyline"
+                        android:contentDescription="Thành phố dưới bầu trời nắng" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingStart="20dp"
+                        android:paddingTop="18dp"
+                        android:paddingEnd="18dp"
+                        android:paddingBottom="16dp">
+                        <TextView android:id="@+id/tvTemperature" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:text="—" android:textColor="#FFFFFF" android:textSize="68sp" android:textStyle="bold" />
+                        <TextView android:id="@+id/tvWeatherCondition" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2dp" android:text="Đang tải thời tiết..." android:textColor="#FFFFFF" android:textSize="17sp" android:textStyle="bold" />
+                        <TextView android:id="@+id/tvFeelsLike" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="" android:textColor="#E7F5FF" android:textSize="13sp" />
+                        <View android:layout_width="1dp" android:layout_height="0dp" android:layout_weight="1" />
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+                            <TextView android:id="@+id/tvLow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="↓ —" android:textColor="#FFFFFF" android:textSize="13sp" android:textStyle="bold" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_marginEnd="12dp" android:text="•" android:textColor="#B9E3FF" android:textSize="14sp" />
+                            <TextView android:id="@+id/tvHigh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="↑ —" android:textColor="#FFFFFF" android:textSize="13sp" android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <ImageView android:id="@+id/ivWeatherIcon" android:layout_width="64dp" android:layout_height="64dp" android:layout_gravity="top|end" android:layout_marginTop="20dp" android:layout_marginEnd="18dp" android:src="@drawable/ic_weather_sun" android:contentDescription="Trạng thái thời tiết" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_card_white"
+                android:elevation="2dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Độ ẩm" android:textColor="#71839A" android:textSize="12sp" />
+                    <TextView android:id="@+id/tvHumidity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="—" android:textColor="#163B68" android:textSize="15sp" android:textStyle="bold" />
+                </LinearLayout>
+                <View android:layout_width="1dp" android:layout_height="34dp" android:background="#E5EDF5" />
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gió" android:textColor="#71839A" android:textSize="12sp" />
+                    <TextView android:id="@+id/tvWind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="—" android:textColor="#163B68" android:textSize="15sp" android:textStyle="bold" />
+                </LinearLayout>
+                <View android:layout_width="1dp" android:layout_height="34dp" android:background="#E5EDF5" />
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mây" android:textColor="#71839A" android:textSize="12sp" />
+                    <TextView android:id="@+id/tvUV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="—" android:textColor="#163B68" android:textSize="14sp" android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="Lối tắt" android:textColor="#163B68" android:textSize="17sp" android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/bg_card_white"
+                android:elevation="1dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="14dp"
+                android:paddingBottom="13dp">
+                <LinearLayout android:id="@+id/tvSeeHourlyDetail" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:orientation="vertical" android:clickable="true" android:focusable="true" android:background="?attr/selectableItemBackgroundBorderless">
+                    <ImageView android:layout_width="42dp" android:layout_height="42dp" android:background="@drawable/bg_circle_blue" android:padding="10dp" android:src="@drawable/ic_clock" android:contentDescription="Theo giờ" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="3 giờ" android:textColor="#52677E" android:textSize="11sp" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/tvSeeForecast" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:orientation="vertical" android:clickable="true" android:focusable="true" android:background="?attr/selectableItemBackgroundBorderless">
+                    <ImageView android:layout_width="42dp" android:layout_height="42dp" android:background="@drawable/bg_circle_green" android:padding="10dp" android:src="@drawable/ic_forecast" android:tint="#FF20A66A" android:contentDescription="Dự báo 5 ngày" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="5 ngày" android:textColor="#52677E" android:textSize="11sp" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/btnOpenMap" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:orientation="vertical" android:clickable="true" android:focusable="true" android:background="?attr/selectableItemBackgroundBorderless">
+                    <ImageView android:layout_width="42dp" android:layout_height="42dp" android:background="@drawable/bg_circle_teal" android:padding="10dp" android:src="@drawable/ic_location_pin" android:tint="#FF11A6A0" android:contentDescription="Bản đồ" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="Bản đồ" android:textColor="#52677E" android:textSize="11sp" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/btnOpenFavorites" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:orientation="vertical" android:clickable="true" android:focusable="true" android:background="?attr/selectableItemBackgroundBorderless">
+                    <ImageView android:layout_width="42dp" android:layout_height="42dp" android:background="@drawable/bg_circle_blue" android:padding="10dp" android:src="@drawable/ic_favorite" android:tint="#FF2386DB" android:contentDescription="Địa điểm yêu thích" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="Yêu thích" android:textColor="#52677E" android:textSize="11sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/alertCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="#FFFFF0F2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="12dp">
+                <ImageView android:layout_width="34dp" android:layout_height="34dp" android:background="#FFFFDDE2" android:padding="8dp" android:src="@drawable/ic_info" android:tint="#FFE24C5B" android:contentDescription="Thông tin thời tiết" />
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="10dp" android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lưu ý thời tiết" android:textColor="#FFCB3446" android:textSize="13sp" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="Dữ liệu hiện tại được cung cấp bởi OpenWeather." android:textColor="#8A5660" android:textSize="11sp" />
+                </LinearLayout>
+                <ImageButton android:id="@+id/btnDismissAlert" android:layout_width="30dp" android:layout_height="30dp" android:background="?attr/selectableItemBackgroundBorderless" android:src="@drawable/ic_close" android:contentDescription="Đóng cảnh báo" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvHourlyForecast" android:layout_width="0dp" android:layout_height="0dp" android:visibility="gone" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvDailyForecast" android:layout_width="0dp" android:layout_height="0dp" android:visibility="gone" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:autoLink="web"
+                android:text="Nguồn dữ liệu thời tiết: OpenWeather (openweathermap.org)"
+                android:textColor="#71839A"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_gravity="bottom"
+        android:background="@color/page_bg_light"
+        android:elevation="12dp"
+        app:itemIconTint="@color/primary_blue"
+        app:itemTextColor="@color/primary_blue"
+        app:itemBackground="@drawable/bg_nav_item"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
